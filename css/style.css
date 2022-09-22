@@ -270,30 +270,6 @@ input:focus {
     #carruselIndex{
         display: none !important;
     }
-
-    /* servicios */
-    .corte {
-        padding: 5px;
-        list-style: none;
-        border: 3px groove yellowgreen;
-       
-    }
-    
-    .color {
-        padding: 5px;
-    }
-    
-    .manicuria__pedicuria {
-        padding: 5px;
-        list-style: none;
-        border: 3px groove yellowgreen;
-    }
-    
-    .depilacion {
-        padding: 5px;
-        list-style: none;
-        border: 3px groove yellowgreen;
-    }
 }
 
 /* RESOLUCION MEDIUM */
