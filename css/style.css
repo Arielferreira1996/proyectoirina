@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: none;
 }
 
 /* ESTILOS DEL BODY */
@@ -11,6 +12,7 @@ body {
     animation-duration: 10s;
     animation-fill-mode: forwards;
     background-color: rgb(62, 62, 62);
+   
 }
 
 @keyframes animacion_body {
@@ -35,12 +37,12 @@ body {
 
 #MainIndex {
     width: 100%;
-    height: 270vh;
+    height: 268vh;
 }
 
 #footerIndex {
     width: 100%;
-    height: 10vh;
+    height: 12vh;
 }
 
 li {
@@ -150,27 +152,27 @@ p {
 .corte {
     padding: 5px;
     list-style: none;
-    border: 3px groove yellowgreen;
+    border: 3px groove yellow;
    
 }
 
 .color {
     padding: 5px;
     list-style: none;
-    border: 3px groove yellowgreen;
+    border: 3px groove yellow;
    
 }
 
 .manicuria__pedicuria {
     padding: 5px;
     list-style: none;
-    border: 3px groove yellowgreen;
+    border: 3px groove yellow;
 }
 
 .depilacion {
     padding: 5px;
     list-style: none;
-    border: 3px groove yellowgreen;
+    border: 3px groove yellow;
 }
 
 .estilo__precios {
@@ -259,7 +261,40 @@ input:focus {
 
 
 /* RESOLUCION SMALL */
-@media (min-width: 576px) {  }
+@media (max-width: 576px) { 
+    #MainIndex {
+        width: 100%;
+        height: 190vh;
+    }
+   
+    #carruselIndex{
+        display: none !important;
+    }
+
+    /* servicios */
+    .corte {
+        padding: 5px;
+        list-style: none;
+        border: 3px groove yellowgreen;
+       
+    }
+    
+    .color {
+        padding: 5px;
+    }
+    
+    .manicuria__pedicuria {
+        padding: 5px;
+        list-style: none;
+        border: 3px groove yellowgreen;
+    }
+    
+    .depilacion {
+        padding: 5px;
+        list-style: none;
+        border: 3px groove yellowgreen;
+    }
+}
 
 /* RESOLUCION MEDIUM */
 @media (min-width: 768px){  }
