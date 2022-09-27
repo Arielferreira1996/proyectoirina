@@ -1,0 +1,25 @@
+// ESTILOS DEL BODY //
+body {
+    animation-name: animacion_body;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    background-color: rgb(62, 62, 62);
+}
+body.back__img{
+        background-image: url(../assets/images/background-contacto.jpg);
+        background-size: cover;
+}
+
+@keyframes animacion_body {
+    0% {
+        width: 100%;
+        height: 0;
+        background-color: rgb(94, 92, 92);
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+}

@@ -1,0 +1,44 @@
+// TODAS LAS MEDIA QUERIES //
+
+/* RESOLUCION SMALL */
+@media (max-width: 576px) {
+    #MainIndex {
+        width: 100%;
+        height: 190vh;
+    }
+
+    #carruselIndex {
+        display: none;
+    }
+
+    #banner__servicios {
+        display: none;
+    }
+}
+
+
+/* RESOLUCION MEDIUM */
+@media (min-width: 768px) {
+    main div div.card img.card-img-top {
+        height: 320px;
+      }
+}
+
+/* RESOLICION LARGE */
+@media (min-width: 992px) {
+    main div div.card {
+        width: 300px;
+        height: 600px;
+      }
+    main div div.card img.card-img-top {
+        height: 350px;
+      }
+}
+
+/* RESOLUCION EXTRA LARGE */
+@media (min-width: 1200px) {}
+
+/* RESOLUCION EXTRA EXTRA LARGE */
+@media (min-width: 1400px) {
+
+}

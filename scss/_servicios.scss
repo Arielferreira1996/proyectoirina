@@ -1,0 +1,49 @@
+// ESTILOS DE SERVICIOS
+div {
+    div {
+        img {
+            width: 100%;
+            height: 200px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            background-image: linear-gradient(+50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-style: oblique;
+            font-size: 40px;
+        }
+    }
+
+}
+
+div {
+    .estilos__precios {
+        list-style: none;
+        font-family: 'Courier New', Courier, monospace;
+        color: #ffffff;
+        font-size: larger;
+    }
+
+    div {
+        section {
+            h2 {
+                color: rgb(246, 89, 238) !important;
+            }
+
+            ul {
+                padding: 5px;
+                list-style: none;
+                border: 3px groove yellow;
+
+                li {
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    font-size: 25px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}

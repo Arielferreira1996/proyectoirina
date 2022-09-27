@@ -1,0 +1,88 @@
+// ESTILOS DEL INDEX //
+
+body {
+    header#HeaderIndex {
+        height: 24vh;
+    }
+
+    main#MainIndex {
+        width: 100%;
+        height: 230vh;
+    }
+
+    footer#footerIndex {
+        width: 100%;
+        height: 10vh;
+    }
+}
+
+
+header {
+    div {
+       
+        nav {
+            z-index: 1;
+
+            div {
+                div {
+                    ul {
+                        li {
+                            a.nav-link {
+                                font-size: 25px;
+
+                                &:hover {
+                                    color: rgb(255, 255, 255) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+div.ancho{
+    width: 100%;
+    height: 28vh;
+}
+main {
+    section {
+        div {
+            img.d-block {
+                height: 600px;
+            }
+        }
+    }
+
+
+    section {
+        div {
+            h1 {
+                background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-style: oblique;
+                font-size: 40px;
+            }
+        }
+
+        div {
+            p {
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+            }
+        }
+    }
+
+    section {
+        h2 {
+            color: rgb(113, 113, 238) !important;
+        }
+    }
+}
+
+

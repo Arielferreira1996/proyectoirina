@@ -24,7 +24,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav ms-5">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                             </li>
@@ -46,18 +46,14 @@
             </nav>
         </div>
     </header>
-    <br>
-    <br>
+
     <main>
-        <div class="row text-center"  data-aos="fade-up">
+        <div class="row text-center" data-aos="fade-up">
             <h1 class="col">LLENA EL FORMULARIO</h1>
         </div>
         <form action="#" method="post">
-            <br>
-            <br>
             <fieldset>
                 <legend class="legend">Complete aqui</legend>
-                <br>
                 <div id="form">
                     <div>
                         <label for="nombre">NOMBRE</label>
@@ -148,12 +144,14 @@
                         </select>
 
                     </div>
-                    <br>
-                    <textarea name="comentario" id="" cols="40" rows="10"
-                        placeholder="comentario para agregar"></textarea>
-                    <br>
-                    <input id="button__enviar" type="submit" value="enviar">
-                    <input id="button__limpiar" type="reset" value="limpiar">
+                    <div>
+                        <br>
+                        <textarea name="comentario" id="" cols="40" rows="10"
+                            placeholder="comentario para agregar"></textarea>
+                        <br>
+                        <input id="button__enviar" type="submit" value="enviar">
+                        <input id="button__limpiar" type="reset" value="limpiar">
+                    </div>
                 </div>
             </fieldset>
         </form>
@@ -181,4 +179,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>

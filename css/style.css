@@ -1,285 +1,254 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: none;
+body {
+  -webkit-animation-name: animacion_body;
+          animation-name: animacion_body;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: rgb(62, 62, 62);
 }
 
-/* ESTILOS DEL BODY */
+body.back__img {
+  background-image: url(../assets/images/background-contacto.jpg);
+  background-size: cover;
+}
 
-body {
-    animation-name: animacion_body;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    background-color: rgb(62, 62, 62);
-   
+@-webkit-keyframes animacion_body {
+  0% {
+    width: 100%;
+    height: 0;
+    background-color: rgb(94, 92, 92);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
 }
 
 @keyframes animacion_body {
-    0% {
-        width: 100%;
-        height: 0;
-        background-color: rgb(94, 92, 92);
-    }
-
-    100% {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-    }
-}
-
-
-/* ESTILOS DEL INDEX */
-#HeaderIndex {
-    height: 20vh;
-}
-
-#MainIndex {
+  0% {
     width: 100%;
-    height: 268vh;
-}
-
-#footerIndex {
+    height: 0;
+    background-color: rgb(94, 92, 92);
+  }
+  100% {
     width: 100%;
-    height: 12vh;
-}
-
-li {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 25px;
-}
-
-h1 {
-    background-image: linear-gradient(+50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-style: oblique;
-    font-size: 40px;
-}
-
-h2 {
-    color: rgb(157, 157, 237) !important;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-}
-
-.navbar {
-    z-index: 100
-}
-
-.card-text{
-    color: rgb(254, 254, 254);
-}
-.card-body{
+    height: 100%;
     background-color: black;
+  }
+}
+body header#HeaderIndex {
+  height: 24vh;
+}
+body main#MainIndex {
+  width: 100%;
+  height: 230vh;
+}
+body footer#footerIndex {
+  width: 100%;
+  height: 10vh;
 }
 
-.ancho {
-    width: 100%;
-    height: 20vh;
+header div nav {
+  z-index: 1;
+}
+header div nav div div ul li a.nav-link {
+  font-size: 25px;
+}
+header div nav div div ul li a.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
 }
 
-#grillaIndex {
-    height: 350vh;
-
+div.ancho {
+  width: 100%;
+  height: 28vh;
 }
 
-#grillaImagenes {
-    height: 250vh;
+main section div img.d-block {
+  height: 600px;
+}
+main section div h1 {
+  background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: oblique;
+  font-size: 40px;
+}
+main section div p {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+main section h2 {
+  color: rgb(113, 113, 238) !important;
 }
 
-#grillaServicios {
-    height: 240vh;
+div div img {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+div div h1 {
+  background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: oblique;
+  font-size: 40px;
 }
 
-#grillaVideo {
-    height: 400vh;
+div .estilos__precios {
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  font-size: larger;
+}
+div div section h2 {
+  color: rgb(246, 89, 238) !important;
+}
+div div section ul {
+  padding: 5px;
+  list-style: none;
+  border: 3px groove yellow;
+}
+div div section ul li {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
 
-#grillaContacto {
-    height: 120vh;
-
+main div div.card {
+  width: 600px;
+  height: 600px;
+}
+main div div.card img.card-img-top {
+  height: 400px;
 }
 
-
-.estilo__de__las__imagenes {
-    border-radius: 10px;
+main div div div.card-body {
+  background-color: black;
 }
 
-
-/* ESTILOS DE FOOTER */
-
-#footerImagenes {
-
-    width: 100%;
-    height: 22vh;
-
+p.card-text {
+  color: rgb(255, 255, 255);
 }
 
-#footerServicios {
-    width: 100%;
-    height: 22vh;
+body header#HeaderVideo {
+  height: 32vh;
 }
 
-#footerVideos {
-
-    width: 100%;
-    height: 22vh;
-
+main div section div h2.video {
+  color: rgb(169, 169, 237);
+}
+main div section div video.video__uno {
+  border-radius: 20px;
+  cursor: pointer;
+}
+main div section div video.video__dos {
+  border-radius: 20px;
+  cursor: pointer;
+}
+main div section div video.video__tres {
+  border-radius: 20px;
+  cursor: pointer;
+}
+main div section div video.video__cuatro {
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-#footerContacto {
-
-    width: 100%;
-    height: 22vh;
-
+body header#grillaContacto {
+  height: 100vh;
 }
 
-
-/* ESTILOS DE SERVICIOS */
-
-#banner__servicios {
-    width: 100%;
-    height: 200px;
+main div {
+  text-align: center;
+}
+main div h1 {
+  padding-top: 60px;
+  background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: oblique;
+  font-size: 40px;
+}
+main form fieldset legend {
+  font-style: oblique;
+  text-shadow: 0 0 8px rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(157, 157, 237);
+}
+main form fieldset #form {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
 }
 
-.corte {
-    padding: 5px;
-    list-style: none;
-    border: 3px groove yellow;
-   
+div select #selector__color {
+  cursor: pointer;
 }
 
-.color {
-    padding: 5px;
-    list-style: none;
-    border: 3px groove yellow;
-   
+div input {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+div input:focus {
+  font-size: 40px;
+}
+div input {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+div input:focus {
+  font-size: 45px;
 }
 
-.manicuria__pedicuria {
-    padding: 5px;
-    list-style: none;
-    border: 3px groove yellow;
+select#selector__color {
+  background-color: yellow;
+  border-radius: 5px;
 }
 
-.depilacion {
-    padding: 5px;
-    list-style: none;
-    border: 3px groove yellow;
+div input {
+  background-color: yellow;
+  border-radius: 8px;
 }
-
-.estilo__precios {
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: #ffffff;
-    font-size: larger;
-}
-
-#arriba__rapido {
-    color: black;
-    background-color: yellow;
-    cursor: pointer;
-}
-
-/* ESTILOS DE LOS VIDEOS */
-
-.video {
-    color: rgb(169, 169, 237);
-}
-
-.video__uno {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.video__dos {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.video__tres {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.video__cuatro {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-
-/* ESTILOS DE CONTACTO */
-
-
-.back__img {
-    background-image: url(../assets/images/background-contacto.jpg);
-    background-size: cover;
-}
-
-.legend {
-
-    font-style: oblique;
-    text-shadow: 0 0 8px rgb(0, 0, 0);
-    text-align: center;
-}
-
-
-#form {
-    text-align: center;
-    font-size: 20px;
-}
-
-#selector__color {
-    cursor: pointer;
-}
-
-#button__enviar {
-    cursor: pointer;
-}
-
-#button__limpiar {
-    cursor: pointer;
-}
-
-input {
-    transition: all 1s;
-}
-
-input:focus {
-    font-size: 15px;
-}
-
-
-
-
 
 /* RESOLUCION SMALL */
-@media (max-width: 576px) { 
-    #MainIndex {
-        width: 100%;
-        height: 190vh;
-    }
-   
-    #carruselIndex{
-        display: none !important;
-    }
+@media (max-width: 576px) {
+  #MainIndex {
+    width: 100%;
+    height: 190vh;
+  }
+
+  #carruselIndex {
+    display: none;
+  }
+
+  #banner__servicios {
+    display: none;
+  }
 }
-
 /* RESOLUCION MEDIUM */
-@media (min-width: 768px){  }
-
+@media (min-width: 768px) {
+  main div div.card img.card-img-top {
+    height: 320px;
+  }
+}
 /* RESOLICION LARGE */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+  main div div.card {
+    width: 300px;
+    height: 600px;
+  }
 
+  main div div.card img.card-img-top {
+    height: 350px;
+  }
+}
 /* RESOLUCION EXTRA LARGE */
-@media (min-width: 1200px) {  }
-
 /* RESOLUCION EXTRA EXTRA LARGE */
-@media (min-width: 1400px)  { }
