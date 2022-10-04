@@ -1,0 +1,21 @@
+.boton {
+    border-radius: 8px;
+    border: 2px solid map-get($paleta-colores, "negro");
+    background-color: map-get($paleta-colores, "amarillo");
+    color: map-get($paleta-colores, "negro");
+    text-align: center;
+}
+
+select#selector__color {
+    @extend .boton;
+}
+
+
+div {
+    input {
+        @extend .boton;
+        background-color: map-get($paleta-colores, "rojo");
+        color: map-get($paleta-colores, "blanco");
+        font-style: italic;
+    }
+}

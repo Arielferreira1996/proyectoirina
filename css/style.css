@@ -50,6 +50,10 @@ body footer#footerIndex {
   height: 10vh;
 }
 
+header div nav div a img {
+  border-radius: 50px;
+}
+
 header div nav {
   z-index: 1;
 }
@@ -102,11 +106,11 @@ div div h1 {
 div .estilos__precios {
   list-style: none;
   font-family: "Courier New", Courier, monospace;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: larger;
 }
 div div section h2 {
-  color: rgb(246, 89, 238) !important;
+  color: rgb(113, 113, 238) !important;
 }
 div div section ul {
   padding: 5px;
@@ -128,7 +132,7 @@ main div div.card img.card-img-top {
 }
 
 main div div div.card-body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 p.card-text {
@@ -179,12 +183,11 @@ main form fieldset legend {
   font-style: oblique;
   text-shadow: 0 0 8px rgb(0, 0, 0);
   text-align: center;
-  color: rgb(157, 157, 237);
+  color: rgb(113, 113, 238);
 }
 main form fieldset #form {
   text-align: center;
   font-size: 30px;
-  color: rgb(0, 0, 0);
 }
 
 div select #selector__color {
@@ -206,16 +209,6 @@ div input {
 }
 div input:focus {
   font-size: 45px;
-}
-
-select#selector__color {
-  background-color: yellow;
-  border-radius: 5px;
-}
-
-div input {
-  background-color: yellow;
-  border-radius: 8px;
 }
 
 /* RESOLUCION SMALL */
@@ -252,3 +245,80 @@ div input {
 }
 /* RESOLUCION EXTRA LARGE */
 /* RESOLUCION EXTRA EXTRA LARGE */
+@media screen and (max-width: 574px) {
+  section img {
+    width: 500px !important;
+    height: 500px !important;
+    padding: 15px;
+  }
+}
+
+div.card {
+  width: 600px !important;
+  height: 600px;
+}
+@media screen and (max-width: 300px) {
+  div.card {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  div.card {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  section div video {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  section div video {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .text {
+    width: 40% !important;
+    padding: 5px !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  .text {
+    width: 40% !important;
+    padding: 5px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  div textarea {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  div textarea {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+
+.boton, div input, select#selector__color {
+  border-radius: 8px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(226, 241, 60);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+div input {
+  background-color: rgb(219, 4, 4);
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}

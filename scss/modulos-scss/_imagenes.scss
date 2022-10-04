@@ -18,12 +18,15 @@ main {
     div {
         div {
             div.card-body {
-                background-color: black;
+                background-color: map-get($paleta-colores,"negro");
             }
         }
     }
 }
 
 p.card-text {
-    color: rgb(255, 255, 255)
+    color: map-get($paleta-colores,"blanco");
+
 }
+
+

@@ -16,10 +16,22 @@ body {
     }
 }
 
+header {
+    div {
+        nav {
+            div {
+                a {
+                    img{
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 header {
     div {
-       
         nav {
             z-index: 1;
 
@@ -31,7 +43,7 @@ header {
                                 font-size: 25px;
 
                                 &:hover {
-                                    color: rgb(255, 255, 255) !important;
+                                    color: map-get($paleta-colores, "blanco") !important;
                                 }
                             }
                         }
@@ -43,10 +55,11 @@ header {
 
 }
 
-div.ancho{
+div.ancho {
     width: 100%;
     height: 28vh;
 }
+
 main {
     section {
         div {
@@ -71,7 +84,7 @@ main {
 
         div {
             p {
-                color: rgb(255, 255, 255);
+                color: map-get($paleta-colores, "blanco");
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 18px;
             }
@@ -80,9 +93,7 @@ main {
 
     section {
         h2 {
-            color: rgb(113, 113, 238) !important;
+            color: map-get($paleta-colores, "lila") !important;
         }
     }
 }
-
-

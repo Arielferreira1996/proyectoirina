@@ -27,13 +27,13 @@ main {
                 font-style: oblique;
                 text-shadow: 0 0 8px rgb(0, 0, 0);
                 text-align: center;
-                color: rgb(157, 157, 237)
+                color: map-get($paleta-colores, "lila");
             }
 
             #form {
                 text-align: center;
                 font-size: 30px;
-                color: rgb(0, 0, 0);
+                color: map-get($paleta-colores, "black");
             }
         }
     }
@@ -65,15 +65,3 @@ div {
     }
 }
 
-select#selector__color{
-    background-color: yellow;
-    border-radius: 5px;
-
-}
-
-div{
-    input{
-        background-color: yellow;
-        border-radius: 8px;
-    }
-}

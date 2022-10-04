@@ -1,0 +1,77 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin movil($medida : 300px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+@mixin mvGrandes($medida : 574px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+section img {
+    @include mvGrandes() {
+        width: 500px !important;
+        height: 500px !important;
+        padding: 15px;
+    }
+}
+
+div.card {
+    width: 600px !important;
+    height: 600px;
+
+    @include movil() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+
+    @include mvGrandes() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+}
+
+section div video {
+    @include movil() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+
+    @include mvGrandes() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+}
+
+.text {
+    @include movil() {
+        width: 40% !important;
+        padding: 5px !important;
+    }
+
+    @include mvGrandes() {
+        width: 40% !important;
+        padding: 5px !important;
+    }
+}
+
+div textarea {
+    @include movil() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+
+    @include mvGrandes() {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+
+}
