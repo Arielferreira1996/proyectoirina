@@ -163,6 +163,25 @@ main div section div video.video__cuatro {
   cursor: pointer;
 }
 
+p a .btn {
+  border-radius: 30% solid rgb(219, 4, 4) !important;
+  color: rgb(0, 0, 0) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+div #collapseExample {
+  padding-left: 5% !important;
+}
+
+div div .card {
+  height: 20% !important;
+}
+
+footer div ul img {
+  background-color: rgb(226, 241, 60) !important;
+}
+
 body header#grillaContacto {
   height: 100vh;
 }

@@ -45,3 +45,33 @@ main {
         }
     }
 }
+
+p a  {
+    .collapsed {
+    background-color: map-get($paleta-colores, "amarillo");
+    border: 30% solid green !important;
+    color: map-get($paleta-colores, "negro") !important;
+    }
+}
+
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(185, 185, 191, 0.25) !important;
+}
+
+p a  {
+    &:enabled {
+        box-shadow: none !important;
+    }
+
+}
+
+div #collapseExample {
+    padding-left: 5% !important;
+}
+
+div div .card {
+    height: 20% !important;
+}
+
