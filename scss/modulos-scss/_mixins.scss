@@ -4,19 +4,67 @@
     box-sizing: border-box;
 }
 
+// mixin mediaqueries de movil pequeño
 @mixin movil($medida : 300px) {
     @media screen and (max-width: $medida) {
         @content;
     }
 }
 
-@mixin mvGrandes($medida : 574px) {
+@mixin movilMed($medida : 365px) {
     @media screen and (max-width: $medida) {
         @content;
     }
 }
 
+// mixin mediaqueries de movil grande
+@mixin mvGrandes($medida : 574px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+// mixin mediaqueries tablets pequeñas
+@mixin tabletsP($medida : 766px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// mixin media queries de desktop
+@mixin desktop($medida : 1500px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// quitamos carrusel en celulares
+#carruselIndex {
+    @include mvGrandes() {
+        display: none
+    }
+
+    @include movil() {
+        display: none
+    }
+}
+
+.parrafo {
+    @include movil() {
+        font-size: 1em !important;
+    }
+
+    @include movilMed() {
+        font-size: 1em !important;
+    }
+}
+
+// estilos de la img de inicio
 section img {
+    @include movil() {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
     @include mvGrandes() {
         width: 500px !important;
         height: 500px !important;
@@ -24,21 +72,23 @@ section img {
     }
 }
 
+// estilos de las cards
 div.card {
     width: 600px !important;
     height: 600px;
 
     @include movil() {
         width: 100% !important;
-        padding: 5px !important;
+        padding: 2px !important;
     }
 
     @include mvGrandes() {
         width: 100% !important;
-        padding: 5px !important;
+        padding: 2px !important;
     }
 }
 
+// estilos de videos
 section div video {
     @include movil() {
         width: 100% !important;
@@ -49,6 +99,28 @@ section div video {
         width: 100% !important;
         padding: 5px !important;
     }
+}
+// estilo de colapso en boton videos 
+#collapseExample {
+    @include mvGrandes() {
+        padding-right: 15% !important;
+    }
+    @include movil() {
+        padding-left: 1% !important;
+    }
+    @include tabletsP() {
+        padding-right: 19% !important;
+    }
+    @include desktop() {
+       padding-right: 2% !important;
+    }
+}
+
+.card-body{
+    @include desktop() {
+        padding-right: 10% !important;
+       
+     }
 }
 
 .text {
@@ -63,6 +135,7 @@ section div video {
     }
 }
 
+// textarea de contactos
 div textarea {
     @include movil() {
         width: 100% !important;
@@ -70,9 +143,9 @@ div textarea {
     }
 
     @include mvGrandes() {
-        width: 100% !important;
+        width: 90% !important;
         padding: 5px !important;
+
     }
 
 }
-

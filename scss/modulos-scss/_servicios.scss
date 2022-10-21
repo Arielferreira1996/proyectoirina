@@ -1,14 +1,9 @@
 // ESTILOS DE SERVICIOS
+// estilos de titulos
 div {
     div {
-        img {
-            width: 100%;
-            height: 200px;
-            margin-top: 30px;
-        }
-
         h1 {
-            background-image: linear-gradient(+50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
+            background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -18,7 +13,7 @@ div {
     }
 
 }
-
+// estilos de lista de precios
 div {
     .estilos__precios {
         list-style: none;
@@ -29,14 +24,15 @@ div {
 
     div {
         section {
-            h2 {
+            h3 {
                 color:map-get($paleta-colores,"lila") !important;
             }
 
             ul {
                 padding: 5px;
                 list-style: none;
-                border: 3px groove yellow;
+                border: 3px groove map-get($paleta-colores,"amarillo");
+                border-radius: 5px;
 
                 li {
                     font-family: Arial, Helvetica, sans-serif !important;
@@ -46,4 +42,9 @@ div {
             }
         }
     }
+}
+// estilo cards
+.card{
+    width: 100%;
+    background-color: map-get($paleta-colores,"negro");
 }

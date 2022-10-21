@@ -1,25 +1,32 @@
 // ESTILOS DEL BODY //
 body {
-    animation-name: animacion_body;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    background-color: rgb(62, 62, 62);
-}
-body.back__img{
-        background-image: url(../assets/images/background-contacto.jpg);
-        background-size: cover;
+    width: 100%;
+    background-color: map-get($paleta-colores,"negro");
 }
 
-@keyframes animacion_body {
-    0% {
-        width: 100%;
-        height: 0;
-        background-color: rgb(94, 92, 92);
+
+body {
+    #HeaderIndex{
+        height: 28vh;
     }
 
-    100% {
+    main#MainIndex {
         width: 100%;
-        height: 100%;
-        background-color: black;
+        height: 350vh;
+    }
+
+
+    footer#footerIndex {
+        width: 100%;
+        height: 8vh;
+    }
+
+    header#HeaderProductos {
+        height: 20vh;
+    }
+
+    #grillaContacto {
+        width: 20vw;
+        height: 100vh;
     }
 }

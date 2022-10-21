@@ -1,0 +1,21 @@
+// fondo de las cartas
+div .card.mb-3{
+        background-color: black;
+    }
+// estilos de subtitulos de productos
+h2 {
+    color: map-get($paleta-colores,"lila");
+    padding: 30px;
+}
+// borde de las imagenes de productos
+div div div div img{
+    border-radius: 5px;
+}
+// estilo dentro de la card
+div .col-md-4{
+    padding: 2px;
+}
+
+.texto__productos{
+    font-size: 16px;
+}
