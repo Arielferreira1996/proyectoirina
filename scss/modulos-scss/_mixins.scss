@@ -23,6 +23,7 @@
         @content;
     }
 }
+
 // mixin mediaqueries tablets pequeñas
 @mixin tabletsP($medida : 766px) {
     @media screen and (max-width: $medida) {
@@ -30,12 +31,13 @@
     }
 }
 
-// mixin media queries de desktop
+// mixin mediaqueries de desktop
 @mixin desktop($medida : 1500px) {
     @media screen and (max-width: $medida) {
         @content;
     }
 }
+
 
 // quitamos carrusel en celulares
 #carruselIndex {
@@ -100,27 +102,12 @@ section div video {
         padding: 5px !important;
     }
 }
+
 // estilo de colapso en boton videos 
 #collapseExample {
     @include mvGrandes() {
         padding-right: 15% !important;
     }
-    @include movil() {
-        padding-left: 1% !important;
-    }
-    @include tabletsP() {
-        padding-right: 19% !important;
-    }
-    @include desktop() {
-       padding-right: 2% !important;
-    }
-}
-
-.card-body{
-    @include desktop() {
-        padding-right: 10% !important;
-       
-     }
 }
 
 .text {

@@ -8,7 +8,6 @@ body #HeaderIndex {
 }
 body main#MainIndex {
   width: 100%;
-  height: 350vh;
 }
 body footer#footerIndex {
   width: 100%;
@@ -62,10 +61,13 @@ main div p {
 }
 
 .mi__lugar {
-  width: 100%;
-  height: 70%;
-  padding: 20px;
-  border-radius: 10px;
+  padding-bottom: 3%;
+  border-radius: 15px;
+}
+
+.mi__lugar1 {
+  padding-bottom: 3%;
+  border-radius: 15px;
 }
 
 div div h1 {
@@ -343,27 +345,6 @@ div.card {
 @media screen and (max-width: 574px) {
   #collapseExample {
     padding-right: 15% !important;
-  }
-}
-@media screen and (max-width: 300px) {
-  #collapseExample {
-    padding-left: 1% !important;
-  }
-}
-@media screen and (max-width: 766px) {
-  #collapseExample {
-    padding-right: 19% !important;
-  }
-}
-@media screen and (max-width: 1500px) {
-  #collapseExample {
-    padding-right: 2% !important;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .card-body {
-    padding-right: 10% !important;
   }
 }
 
