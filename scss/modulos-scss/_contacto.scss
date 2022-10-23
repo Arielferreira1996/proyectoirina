@@ -37,7 +37,7 @@ main {
 // estilos de selecionador de color
 #selector__color {
     cursor: pointer;
-    background-color: map-get($paleta-colores, "lila");
+    background-color: map-get($paleta-colores, "amarillo");
     border-radius: 5px;
 }
 
@@ -72,11 +72,11 @@ div {
 
 // estilos de boton
 .button__enviar {
-    background-color: map-get($paleta-colores, "lila");
+    background-color: map-get($paleta-colores, "amarillo");
     border-radius: 5px;
 }
 
 .button__limpiar {
-    background-color: map-get($paleta-colores, "lila");
+    background-color: map-get($paleta-colores, "amarillo");
     border-radius: 5px;
 }
