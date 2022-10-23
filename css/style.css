@@ -229,7 +229,7 @@ main form fieldset #form {
 
 #selector__color {
   cursor: pointer;
-  background-color: rgb(113, 113, 238);
+  background-color: rgb(255, 193, 7);
   border-radius: 5px;
 }
 
@@ -255,12 +255,12 @@ div p.tipo {
 }
 
 .button__enviar {
-  background-color: rgb(113, 113, 238);
+  background-color: rgb(255, 193, 7);
   border-radius: 5px;
 }
 
 .button__limpiar {
-  background-color: rgb(113, 113, 238);
+  background-color: rgb(255, 193, 7);
   border-radius: 5px;
 }
 
