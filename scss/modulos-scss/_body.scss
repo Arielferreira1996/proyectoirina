@@ -1,23 +1,28 @@
 // ESTILOS DEL BODY //
 body {
-    width: 100%;
-    background-color: map-get($paleta-colores,"negro");
+    width: 100vw;
+    background-color: map-get($paleta-colores, "negro");
+    overflow-x: hidden;
 }
 
 
 body {
-    #HeaderIndex{
+    #grillaServicios {
+        width: 100vw;
+    }
+
+    #HeaderIndex {
         height: 28vh;
     }
 
     main#MainIndex {
-        width: 100%;
-        
+        width: 100vw;
+
     }
 
 
     footer#footerIndex {
-        width: 100%;
+        width: 100vw;
         height: 8vh;
     }
 

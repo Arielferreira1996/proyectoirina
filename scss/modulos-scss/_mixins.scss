@@ -18,7 +18,7 @@
 }
 
 // mixin mediaqueries de movil grande
-@mixin mvGrandes($medida : 574px) {
+@mixin mvGrandes($medida : 599px) {
     @media screen and (max-width: $medida) {
         @content;
     }
@@ -26,6 +26,20 @@
 
 // mixin mediaqueries tablets pequeñas
 @mixin tabletsP($medida : 766px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// mixin mediaqueries desktop pequeñas
+@mixin desktopP($medida : 992px) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// mixin mediaqueries desktop medianos
+@mixin desktopM($medida : 1199px) {
     @media screen and (max-width: $medida) {
         @content;
     }
@@ -107,6 +121,45 @@ section div video {
 #collapseExample {
     @include mvGrandes() {
         padding-right: 15% !important;
+    }
+}
+
+div #collapseExample {
+
+    @include movil() {
+        padding-left: 15% !important;
+        padding-right: 12% !important;
+    }
+
+    @include mvGrandes() {
+        padding-left: 15% !important;
+        padding-right: 12% !important;
+    }
+
+    @include desktop() {
+        padding-left: 0% !important;
+        padding-right: 12%;
+    }
+}
+
+div #collapseExample.collapse.show {
+    @include desktopP() {
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+}
+
+div #collapseExample.collapse.show {
+    @include desktopM() {
+        padding-left: 22% !important;
+        padding-right: 0% !important;
+    }
+}
+
+div #collapseExample.collapse.show {
+    @include tabletsP() {
+        font-size: 13px;
+        padding-left: 0% !important;
     }
 }
 

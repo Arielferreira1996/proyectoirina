@@ -18,32 +18,36 @@ main {
     div {
         div {
             div.card-body {
-                background-color: map-get($paleta-colores,"negro");
+                background-color: map-get($paleta-colores, "negro");
                 color: map-get($paleta-colores, "blanco");
             }
         }
     }
 }
+
 // color de parrafo
 p.card-text {
-    color: map-get($paleta-colores,"blanco");
+    color: map-get($paleta-colores, "blanco");
 }
+
 // estilos de los titulos 
-main div h2{
+main div h2 {
     background-image: linear-gradient(50deg, rgb(12, 4, 97), rgb(115, 2, 185), rgb(255, 121, 233)) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-style: oblique;
     font-size: 40px;
-} 
+}
 
 // estilo de boton de botones
-.btn{
-    background-color: map-get($paleta-colores,"amarillo") ;
-    color: map-get($paleta-colores,"negro");
-    &:focus{
-        box-shadow: 0 0 0 0.15rem map-get($paleta-colores,"lila" ) ;}
+.btn {
+    background-color: map-get($paleta-colores, "amarillo");
+    color: map-get($paleta-colores, "negro");
+
+    &:focus {
+        box-shadow: 0 0 0 0.15rem map-get($paleta-colores, "lila");
+    }
 }
 
 // estilo de los titulos de los videos 
@@ -52,7 +56,7 @@ main {
         section {
             div {
                 h3.video {
-                    color: map-get($paleta-colores,"lila");
+                    color: map-get($paleta-colores, "lila");
                 }
 
                 video.video__uno {
@@ -86,7 +90,8 @@ main {
         }
     }
 }
-p  a  {
+
+p a {
     color: map-get($paleta-colores, "negro") !important;
 }
 
@@ -94,7 +99,7 @@ p  a  {
 div #collapseExample {
     padding-top: 1%;
     padding-bottom: 5%;
-    padding-left: 18% !important;
+    padding-left: 15% !important;
 }
 
 // estilo de las cartas completas
@@ -104,9 +109,9 @@ div div .card {
 }
 
 // estilo de boton final
-div{
-    a{
-        .btn{
+div {
+    a {
+        .btn {
             font-family: Courier New, Courier, monospace;
         }
     }
